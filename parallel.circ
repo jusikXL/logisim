@@ -883,6 +883,15 @@
       <a name="label" val="register_selector"/>
       <a name="width" val="2"/>
     </comp>
+    <comp lib="0" loc="(660,580)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="const"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(690,510)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="load_const"/>
+    </comp>
     <comp lib="0" loc="(700,670)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="load_B"/>
@@ -907,10 +916,6 @@
       <a name="appearance" val="NewPins"/>
       <a name="label" val="reset_result"/>
     </comp>
-    <comp lib="0" loc="(710,590)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="multiply"/>
-    </comp>
     <comp lib="0" loc="(720,120)" name="Tunnel">
       <a name="label" val="load_B"/>
     </comp>
@@ -923,6 +928,10 @@
     <comp lib="0" loc="(720,260)" name="Tunnel">
       <a name="label" val="reset_result"/>
     </comp>
+    <comp lib="0" loc="(820,590)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="multiply"/>
+    </comp>
     <comp lib="0" loc="(830,530)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="label" val="clk"/>
@@ -931,8 +940,29 @@
       <a name="facing" val="north"/>
       <a name="label" val="reset_result"/>
     </comp>
-    <comp lib="2" loc="(590,570)" name="Multiplexer">
+    <comp lib="0" loc="(980,120)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="load_const"/>
+    </comp>
+    <comp lib="0" loc="(980,160)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="const"/>
+      <a name="radix" val="10signed"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(990,120)" name="Tunnel">
+      <a name="label" val="load_const"/>
+    </comp>
+    <comp lib="0" loc="(990,160)" name="Tunnel">
+      <a name="label" val="const"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="2" loc="(590,560)" name="Multiplexer">
       <a name="select" val="2"/>
+      <a name="selloc" val="tr"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="2" loc="(710,570)" name="Multiplexer">
       <a name="selloc" val="tr"/>
       <a name="width" val="8"/>
     </comp>
@@ -955,23 +985,30 @@
     <wire from="(320,270)" to="(330,270)"/>
     <wire from="(320,320)" to="(330,320)"/>
     <wire from="(490,530)" to="(500,530)"/>
-    <wire from="(490,550)" to="(490,560)"/>
+    <wire from="(490,550)" to="(550,550)"/>
+    <wire from="(490,560)" to="(490,570)"/>
     <wire from="(490,560)" to="(550,560)"/>
-    <wire from="(490,570)" to="(550,570)"/>
     <wire from="(490,580)" to="(490,590)"/>
-    <wire from="(490,580)" to="(550,580)"/>
-    <wire from="(500,530)" to="(500,550)"/>
-    <wire from="(500,550)" to="(550,550)"/>
-    <wire from="(570,510)" to="(570,550)"/>
-    <wire from="(590,570)" to="(830,570)"/>
+    <wire from="(490,580)" to="(500,580)"/>
+    <wire from="(500,530)" to="(500,540)"/>
+    <wire from="(500,540)" to="(550,540)"/>
+    <wire from="(500,570)" to="(500,580)"/>
+    <wire from="(500,570)" to="(550,570)"/>
+    <wire from="(570,510)" to="(570,540)"/>
+    <wire from="(590,560)" to="(680,560)"/>
+    <wire from="(660,580)" to="(680,580)"/>
+    <wire from="(690,510)" to="(690,550)"/>
     <wire from="(700,670)" to="(830,670)"/>
     <wire from="(700,710)" to="(830,710)"/>
     <wire from="(710,120)" to="(720,120)"/>
     <wire from="(710,160)" to="(720,160)"/>
     <wire from="(710,210)" to="(720,210)"/>
     <wire from="(710,260)" to="(720,260)"/>
-    <wire from="(710,590)" to="(830,590)"/>
+    <wire from="(710,570)" to="(830,570)"/>
+    <wire from="(820,590)" to="(830,590)"/>
     <wire from="(830,530)" to="(830,550)"/>
     <wire from="(830,750)" to="(830,790)"/>
+    <wire from="(980,120)" to="(990,120)"/>
+    <wire from="(980,160)" to="(990,160)"/>
   </circuit>
 </project>
